@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <nav className="navbar">
       <Link to="/" className="logo">
@@ -19,6 +19,15 @@ const Navbar = () => {
         >
           New Blog
         </Link>
+
+    <label className="theme-switch">
+      <input
+        type="checkbox"
+        checked={darkMode}
+        onChange={() => setDarkMode(!darkMode)}
+      />
+      <span className="slider"></span>
+    </label>
       </div>
     </nav>
   );
