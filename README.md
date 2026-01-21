@@ -1,6 +1,8 @@
 # Running the website and other info
 
-Clone the repo and run "npm start". Then open a new terminal and run "npx json-server --watch data/db.json --port 8000".
+Clone the repo and run "npm start". 
+
+Then open a new terminal and run "npx json-server --watch data/db.json --port 8000".
 
 If project is cloned without node_modules, change directory into the folder and do a "npm install" in terminal.
 
